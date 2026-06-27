@@ -1,17 +1,17 @@
-import { Card } from "@/components/Card";
-import { CaseStudyCard } from "@/components/CaseStudyCard";
-import { Hero } from "@/components/Hero";
-import { Section } from "@/components/Section";
-import { WorkflowStep } from "@/components/WorkflowStep";
-import { capabilities, caseStudies, workflowSteps } from "@/lib/content";
+import { Card } from '@/components/Card';
+import { CaseStudyCard } from '@/components/CaseStudyCard';
+import { Hero } from '@/components/Hero';
+import { Section } from '@/components/Section';
+import { WorkflowStep } from '@/components/WorkflowStep';
+import { capabilities, caseStudies, workflowSteps } from '@/lib/content';
 
 export default function Home() {
   return (
     <>
       <Hero
         eyebrow="Senior/staff portfolio"
-        title="AI Product Systems Architect"
-        description="A creative designer-engineer bridging design systems, frontend engineering, developer experience, and AI-native software development."
+        title="Kenichi Shinagawa"
+        description="AI Product Systems Architect bridging design systems, frontend engineering, developer experience, and AI-native software development."
         primaryHref="/workflow"
         primaryLabel="Explore workflow demo"
         secondaryHref="/case-studies"
@@ -25,7 +25,9 @@ export default function Home() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {capabilities.map((capability) => (
             <Card key={capability}>
-              <p className="text-lg font-semibold leading-snug text-foreground">{capability}</p>
+              <p className="text-lg font-semibold leading-snug text-foreground">
+                {capability}
+              </p>
             </Card>
           ))}
         </div>
